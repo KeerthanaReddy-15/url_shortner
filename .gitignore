@@ -1,0 +1,5 @@
+# Ignore virtual environment and database
+.venv/
+_pycache_/
+*.pyc
+urls.db
