@@ -25,9 +25,7 @@ def redirect_to_original(short_code):
         return redirect(original_url)
     return "Invalid short URL", 404
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     import os
-
-    if __name__ == "__main__":
-        port = int(os.environ.get("PORT", 5000))  # Get the port from Render
-        app.run(host="0.0.0.0", port=port)  # Make the app accessible to public
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
