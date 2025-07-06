@@ -28,6 +28,6 @@ def redirect_to_original(short_code):
 if __name__ == "__main__":
     import os
 
-    if _name_ == "_main_":
-        port = int(os.environ.get("PORT", 5000))
-        app.run(host='0.0.0.0', port=port)
+    if __name__ == "__main__":
+        port = int(os.environ.get("PORT", 5000))  # Get the port from Render
+        app.run(host="0.0.0.0", port=port)  # Make the app accessible to public
